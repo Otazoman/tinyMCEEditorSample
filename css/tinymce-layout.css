@@ -1,0 +1,34 @@
+/* 全体のレイアウト調整 */
+body {
+    display: flex;
+}
+
+/* 左側のサイドバー */
+.sidebar {
+    flex: 1;
+    padding: 20px;
+}
+
+/* タイトルとエディターを左に配置 */
+#title,
+#editor {
+    width: 100%;
+}
+
+/* メインコンテンツ */
+main {
+    width: 35%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* クリアフロート */
+.clear {
+    clear: both;
+}
+
+/* スタイルを適切に設定してください */
+ul {
+    list-style-type: none;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordPress-like Editor</title>
+    <link rel="stylesheet" href="./css/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="./css/tinymce-layout.css">
+    <script src="./scripts/tinymce/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="./scripts/tinymce.controller.js" referrerpolicy="origin"></script>
+</head>
+
+<body>
+    <main>
+        <h2>選択したフォルダ内のファイル一覧</h2>
+        <input type="file" webkitdirectory directory id="folderInput"
+            onchange="displayFolderContents(this.files)"><br />
+        <input type="text" id="searchKeyword" placeholder="ファイルを検索"><button id="searchButton">検索</button>
+        <ul id="fileList"></ul>
+    </main>
+    <div class="sidebar">
+        <h1 id="title" contenteditable="true">WordPress-like Editor</h1>
+        <textarea id="editor"></textarea>
+    </div>
+    <div class="clear"></div>
+    <div id="fileContent"></div>
+    <script src="./scripts/filer.js" referrerpolicy="origin"></script>
+</body>
+
+</html>
